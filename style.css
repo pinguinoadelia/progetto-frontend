@@ -593,7 +593,7 @@ body{
   margin-right: 0.5rem;
 }
 .logo-text {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #000;
 }
@@ -607,10 +607,10 @@ body{
 .navbar-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-right: 0 400px;
   display: flex;
-  justify-content: center;     /* allinea orizzontalmente */
-  gap: 1rem;                    /* spazio uniforme tra i link */
+  justify-content: center;    /* allinea orizzontalmente */
+  gap: 1rem;                  /* spazio uniforme tra i link */
 }
 
 .navbar-list li {
@@ -621,7 +621,9 @@ body{
 }
 
 .navbar-list a {
-  color: #333;
+  color: #505050;            /* equivalente a rgb(80,80,80) */
+  font-family: "Unify Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;          /* un semibold, non full-bold */
   text-decoration: none;
 }
 

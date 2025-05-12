@@ -580,10 +580,15 @@ body{
   --blue: #00a2ff;
 }
 
+#navbar .btn-light {
+  margin-left: 1rem; /* prima era 1rem (da me-3), portalo a 2rem per più spazio */
+}
+
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-left: 1rem;
 }
 .logo-circle {
   width: 28px;
@@ -607,10 +612,10 @@ body{
 .navbar-list {
   list-style: none;
   padding: 0;
-  margin-right: 0 400px;
+  margin: 0;
   display: flex;
-  justify-content: center;    /* allinea orizzontalmente */
-  gap: 1rem;                  /* spazio uniforme tra i link */
+  justify-content: center;     /* allinea orizzontalmente */
+  gap: 1rem;                    /* spazio uniforme tra i link */
 }
 
 .navbar-list li {
@@ -621,14 +626,16 @@ body{
 }
 
 .navbar-list a {
-  color: #505050;            /* equivalente a rgb(80,80,80) */
+  color: #505050;                              /* grigio scuro come da mockup */
   font-family: "Unify Sans", Helvetica, Arial, sans-serif;
-  font-weight: 600;          /* un semibold, non full-bold */
-  text-decoration: none;
+  font-weight: 600;                            /* semi-bold, non troppo marcato */
+  font-size: 13.5px;                           /* come già hai impostato */
+  text-decoration: none;                       /* rimuove eventuali sottolineature */
 }
 
 .navbar-list li:hover a {
   font-weight: bold;
+  text-decoration: none;
 }
 
 
@@ -854,7 +861,5 @@ body{
   }
 }
 
-
-
-
+  
 

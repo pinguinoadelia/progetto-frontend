@@ -860,3 +860,144 @@ body{
     margin-left: 140px;    /* spostamento “originale” */
   }
 }
+
+.offcanvas {
+  background-color: #ffffff; /* Bianco */
+  color: #212529; /* Grigio scuro (quasi nero) */
+  padding: 30px 60px;
+}
+
+#offcanvasMenu {
+  width: clamp(430px, 50vw, 800px);
+}
+
+.offcanvas .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offcanvas .menu span {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.offcanvas .menu span img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.offcanvas a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.offcanvas a:hover {
+  background-color: #f8f9fa;
+  color: #0d6efd;
+}
+
+.offcanvas-extra a:hover {
+  color: inherit;
+}
+
+/* Bottone di chiusura (X) del menu laterale */
+.btn-close {
+  width: 1em;
+  height: 1em;
+  background-size: 1em;
+  background: none;
+  opacity: 0.7;
+}
+
+#close-button {
+  width: 1em;
+  height: 1em;
+}
+
+/* Overlay scuro dietro il menu */
+.offcanvas-backdrop.show {
+  opacity: 0.7;
+  background-color: #000000;
+}
+
+.offcanvas-extra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.offcanvas-extra h4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.offcanvas-extra h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.offcanvas-extra p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#searchbar-box {
+  display: flex;
+  background: white;
+  border-radius: 25px;
+  padding: 10px 10px;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+}
+
+#searchbar {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  width: 90%;
+}
+
+#searchbar:hover {
+  background-color: #f3f3f3;
+}
+
+#searchbutton {
+  color: white;
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#search_icon {
+width: 30px;
+height: 30px;
+}
+
+.arrow-icon {
+  display: inline-block;       /* serve perché transform funzioni su <img> */
+  transition: transform .2s ease;
+  transform: rotate(0deg);     /* puntata a destra di default */
+}
+
+/* Su schermi stretti (es. sotto i 768px) ruota verso il basso */
+@media (max-width: 768px) {
+  .offcanvas .arrow-icon {
+    transform: rotate(90deg);
+  }
+}
+
+/* --- override del padding di default su navbar e container-fluid --- */
+#navbar,
+#navbar .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
